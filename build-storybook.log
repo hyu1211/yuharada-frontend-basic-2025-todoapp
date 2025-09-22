@@ -1,0 +1,30 @@
+yarn run v1.22.22
+$ storybook build -s ./src --output-dir=/tmp/chromatic--31590-r9frLT9f1juk
+@storybook/cli v7.4.2
+
+info => Cleaning outputDir: /tmp/chromatic--31590-r9frLT9f1juk
+info => Loading presets
+info => Building manager..
+info => Manager built (2.75 s)
+info => Compiling preview..
+info => Copying static files: ././src => ./
+info => Copying static files: /mnt/c/Users/youh1/Develop/4nonome/todoapp/node_modules/@storybook/manager/static at /tmp/chromatic--31590-r9frLT9f1juk/sb-common-assets
+info Addon-docs: using MDX2
+info => Using implicit CSS loaders
+info => Using default Webpack5 setup
+info => Preview built (53 s)
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   125.e1230b9e.iframe.bundle.js (676 KiB)
+WARN   426.43255d4d.iframe.bundle.js (583 KiB)
+WARN   889.e4b981c7.iframe.bundle.js (686 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (697 KiB)
+WARN       runtime~main.6a314d30.iframe.bundle.js
+WARN       889.e4b981c7.iframe.bundle.js
+WARN       main.c193140f.iframe.bundle.js
+WARN 
+info => Output directory: /tmp/chromatic--31590-r9frLT9f1juk
+Done in 120.13s.
