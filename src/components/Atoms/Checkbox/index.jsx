@@ -2,9 +2,6 @@ import React from "react";
 import check from "../../../assets/svg/check.svg";
 import COLOR from "../../../variables/color";
 import styled from "styled-components";
-import { HOVER_OPACITY } from "../../../variables/hover";
-import { HOVER_TRANSITION } from "../../../variables/hover";
-import IMAGE_SIZE from "../../../variables/image";
 
 export const Checkbox = ({onClick}) => {
     return (
@@ -15,19 +12,19 @@ export const Checkbox = ({onClick}) => {
 };
 
 const CheckboxImage = styled.img`
-    width: ${IMAGE_SIZE.SMALL};
-    height: ${IMAGE_SIZE.SMALL};
+    width: 20px;
+    height: 20px;
     opacity: 0;
 
-    transition: opacity ${HOVER_TRANSITION.FAST} ease;
+    transition: opacity 0.15 ease;
 `;
 
 const CheckboxButton = styled.button`
     position: relative;
-    width: ${IMAGE_SIZE.NORMAL};
-    height: ${IMAGE_SIZE.NORMAL};
+    width: 20px;
+    height: 20px;
     border: 2px solid ${COLOR.LIGHT_GRAY};
-    border-radius: 10%; //Checkboxの角の丸みの微調整
+    border-radius: 10%;
     outline: none;
     background-color: transparent;
     cursor: pointer;
