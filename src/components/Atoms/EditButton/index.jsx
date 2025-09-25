@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import pencil from "../../../assets/svg/pencil.svg";
 import COLOR from "../../../variables/color";
-import { HOVER_OPACITY } from "../../../variables/hover";
-import { HOVER_TRANSITION } from "../../../variables/hover";
-import IMAGE_SIZE from "../../../variables/image";
 
 export const EditButton = ({onClick}) => {
     return (
@@ -15,8 +12,8 @@ export const EditButton = ({onClick}) => {
 };
 
 const PencilImage = styled.img`
-    height: ${IMAGE_SIZE.NORMAL};
-    width: ${IMAGE_SIZE.NORMAL};
+    height: 20px;
+    width: 20px;
     display: block;
     position: relative;
     z-index: 1;
@@ -39,8 +36,8 @@ const Button = styled.button`
     left: 50%;
     
     
-    width: ${IMAGE_SIZE.NORMAL};
-    height: ${IMAGE_SIZE.NORMAL};
+    width: 20px;
+    height: 20px;;
     border-radius: 50%;
     background-color: ${COLOR.WHITE};
     
@@ -48,11 +45,11 @@ const Button = styled.button`
     opacity: 0;
     z-index: 0;
     
-    transition: transform ${HOVER_TRANSITION.FAST} ease, opacity ${HOVER_TRANSITION.FAST} ease;
+    transition: transform 0.05s ease, opacity 0.05s ease;
 }
 
 &:hover::before {
     transform: translate(-50%, -50%) scale(1);
-    opacity: ${HOVER_OPACITY.LOW};
+    opacity: 0.15;
 }
 `;
