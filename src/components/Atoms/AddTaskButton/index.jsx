@@ -54,7 +54,7 @@ const Button = styled.button`
     opacity: 0;
     z-index: 0;
     
-    transition: transform 0,05s ease, opacity 0.05s ease;
+    transition: transform 0.05s ease, opacity 0.05s ease;
 }
 
 &:hover::before {
