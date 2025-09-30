@@ -33,32 +33,16 @@ const Button = styled.button`
     display: flex;
     align-items: center;
     gap: 10px; 
-    padding: 2px 4px; 
+    padding: 2px 6px; 
+    border-radius: 9999px;
     border: none;
     background-color: transparent;
     cursor: pointer;
     outline: none;
 
-&::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -4px;
-    right: -4px;
-    bottom: -2px;
-    
-    border-radius: 9999px;
-    background-color: ${COLOR.GREEN};
-    
-    transform: scale(0);
-    opacity: 0;
-    z-index: 0;
-    
-    transition: transform 0.05s ease, opacity 0.05s ease;
-}
+    transition: background-color 0.1s ease;
 
-&:hover::before {
-    transform: scale(1);
-    opacity: 0.15;
+&:hover {
+    background-color: ${COLOR.GREEN_TRANSLUCENT};
 }
 `;
