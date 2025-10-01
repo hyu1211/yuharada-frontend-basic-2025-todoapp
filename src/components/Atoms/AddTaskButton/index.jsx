@@ -16,20 +16,15 @@ const PlusButtonImage = styled.img`
     height: 20px;
     width: 20px;
     display: block;
-    position: relative;
-    z-index: 1;
 `;
 
 const AddTaskText = styled.span`
     ${TEXT.S}
     color: ${COLOR.GREEN};
     display: block;
-    position: relative;
-    z-index: 1;
 `;
 
 const Button = styled.button`
-    position: relative;
     display: flex;
     align-items: center;
     gap: 10px; 
