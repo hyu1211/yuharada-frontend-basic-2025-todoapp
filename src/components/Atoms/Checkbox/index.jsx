@@ -12,8 +12,8 @@ export const Checkbox = ({onClick}) => {
 };
 
 const CheckboxImage = styled.img`
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     opacity: 0;
 
     transition: opacity 0.15 ease;
