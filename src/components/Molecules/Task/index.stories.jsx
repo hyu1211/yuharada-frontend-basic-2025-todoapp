@@ -10,7 +10,7 @@ export const Default = {
       console.log("task name changed: <" + taskName + ">");
     },
     onTaskComplete: () => {
-        console.log("task complete");
-    }
+      console.log("task complete");
+    },
   },
 };
