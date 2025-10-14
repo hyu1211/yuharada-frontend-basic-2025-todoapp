@@ -29,16 +29,18 @@ export const Task = ({
       <StyledCheckboxWrapper>
         <Checkbox onClick={onTaskComplete} />
       </StyledCheckboxWrapper>
-      {isEditing ? (
-        <Input onEditComplete={onEditComplete} defaultValue={taskName} />
-      ) : (
-        <StyledNameAndButtonWrapper>
-          <StyledTaskName>{taskName}</StyledTaskName>
-          <StyledEditButtonWrapper>
-            <EditButton onClick={onEditButtonClick} />
-          </StyledEditButtonWrapper>
-        </StyledNameAndButtonWrapper>
-      )}
+      <StyledNameAndButtonWrapper>
+        {isEditing ? (
+          <Input onEditComplete={onEditComplete} defaultValue={taskName} />
+        ) : (
+          <>
+            <StyledTaskName>{taskName}</StyledTaskName>
+            <StyledEditButtonWrapper>
+              <EditButton onClick={onEditButtonClick} />
+            </StyledEditButtonWrapper>
+          </>
+        )}
+      </StyledNameAndButtonWrapper>
     </StyledWrapper>
   );
 };
@@ -60,7 +62,7 @@ const StyledNameAndButtonWrapper = styled.div`
   align-items: center;
   width: 100%;
   flex: 1;
-  min-height: 20px;
+  height: 20px;
 `;
 
 const StyledTaskName = styled.div`
@@ -68,7 +70,7 @@ const StyledTaskName = styled.div`
   ${TEXT.S};
   padding: 0 4px;
   flex: 1;
-  align-items: center;
+  height: 20px;
 `;
 
 const StyledEditButtonWrapper = styled.div`
