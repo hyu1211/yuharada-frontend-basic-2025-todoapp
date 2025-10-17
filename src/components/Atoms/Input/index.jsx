@@ -26,6 +26,7 @@ export const Input = ({ defaultValue, onEditComplete }) => {
 
   return (
     <StyledInput
+      id="task-input"
       ref={inputRef}
       defaultValue={defaultValue}
       onBlur={handleBlur}

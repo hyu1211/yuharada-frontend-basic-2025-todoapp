@@ -26,9 +26,7 @@ export const Task = ({
 
   return (
     <StyledWrapper>
-      <StyledCheckboxWrapper>
-        <Checkbox onClick={onTaskComplete} />
-      </StyledCheckboxWrapper>
+      <Checkbox onClick={onTaskComplete} />
       <StyledNameAndButtonWrapper>
         {isEditing ? (
           <Input onEditComplete={onEditComplete} defaultValue={taskName} />
@@ -51,10 +49,6 @@ const StyledWrapper = styled.div`
   padding: 10px;
   width: 100%;
   gap: 10px;
-`;
-
-const StyledCheckboxWrapper = styled.div`
-  flex-shrink: 0;
 `;
 
 const StyledNameAndButtonWrapper = styled.div`
