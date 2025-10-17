@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import COLOR from "../../../variables/color";
 import TEXT from "../../../variables/texts";
@@ -14,7 +14,7 @@ export const Input = ({ defaultValue, onEditComplete }) => {
 
   const handleBlur = () => {
     if (inputRef.current) {
-      onEditComplete?.(inputRef.current.value); //onEditCompleteが渡されている時に実行
+      onEditComplete?.(inputRef.current.value);
     }
   };
 
@@ -26,6 +26,7 @@ export const Input = ({ defaultValue, onEditComplete }) => {
 
   return (
     <StyledInput
+      id="task-input"
       ref={inputRef}
       defaultValue={defaultValue}
       onBlur={handleBlur}
@@ -35,15 +36,15 @@ export const Input = ({ defaultValue, onEditComplete }) => {
 };
 
 const StyledInput = styled.input`
-  width: 100%;
-  ${Text.S}
-  line-height: 20px;
+  flex: 1;
+  ${TEXT.S}
   border-radius: 2px;
   color: ${COLOR.LIGHT_GRAY};
   background-color: ${COLOR.BLACK};
-  padding: 0 4px;
+  padding: 2px 4px 0 4px;
   box-sizing: border-box;
-  /* cursor: pointer; */
   outline: none;
   border: none;
+  margin: 0;
+  height: 20px;
 `;
