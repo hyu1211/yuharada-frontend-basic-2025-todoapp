@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { AddTaskButton } from "../../Atoms/AddTaskButton";
 import { Task } from "../../Molecules/Task";
+import COLOR from "../../../variables/color";
 
 export const TodoCard = () => {
   const [taskList, setTaskList] = useState([]);
@@ -48,6 +49,16 @@ export const TodoCard = () => {
   );
 };
 
-const StyledWrapper = styled.div``;
+const StyledWrapper = styled.div`
+  background-color: ${COLOR.LIGHT_BLACK};
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+`;
 
-const StyledTaskList = styled.div``;
+const StyledTaskList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 10px;
+`;
