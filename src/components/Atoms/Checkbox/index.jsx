@@ -5,6 +5,8 @@ import styled from "styled-components";
 
 export const Checkbox = ({ onClick }) => {
   return (
+    //親コンポーネントのjsxでもonClick={}としているが、ただのprops名として扱われる
+    //DOM要素でのみonClickがイベントハンドラとして扱われる
     <CheckboxButton onClick={onClick}>
       <CheckboxImage src={check} />
     </CheckboxButton>

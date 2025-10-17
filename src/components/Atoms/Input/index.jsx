@@ -13,13 +13,13 @@ export const Input = ({ defaultValue, onEditComplete }) => {
   }, []);
 
   const handleBlur = () => {
-    if (inputRef.current) {
+    if (inputRef.current != null) {
       onEditComplete?.(inputRef.current.value);
     }
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === "Enter" && inputRef.current) {
+    if (event.key === "Enter" && inputRef.current != null) {
       onEditComplete?.(inputRef.current.value);
     }
   };
