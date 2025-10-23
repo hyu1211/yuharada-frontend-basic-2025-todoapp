@@ -31,7 +31,9 @@ export const TodoCard = () => {
 
   return (
     <StyledWrapper>
-      <AddTaskButton onClick={onAddTaskButtonClick} />
+      <StyledAddButtonRow>
+        <AddTaskButton onClick={onAddTaskButtonClick} />
+      </StyledAddButtonRow>
       <StyledTaskList>
         {taskList.map((task, index) => (
           <Task
@@ -54,6 +56,14 @@ const StyledWrapper = styled.div`
   border-radius: 8px;
   padding: 20px;
   margin: 0 auto;
+  width: 450px;
+`;
+
+const StyledAddButtonRow = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 `;
 
 const StyledTaskList = styled.div`
