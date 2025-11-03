@@ -29,7 +29,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 2px 6px;
+  padding: 6px 6px 6px 0;
   border-radius: 9999px;
   border: none;
   background-color: transparent;

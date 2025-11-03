@@ -53,10 +53,10 @@ export const TodoCard = () => {
 
 const StyledWrapper = styled.div`
   background-color: ${COLOR.LIGHT_BLACK};
-  border-radius: 8px;
-  padding: 20px;
-  margin: 0 auto;
-  width: 450px;
+  border-radius: 4px;
+  padding: 15px 15px;
+  margin: 0;
+  width: auto;
 `;
 
 const StyledAddButtonRow = styled.div`
@@ -64,11 +64,13 @@ const StyledAddButtonRow = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 `;
 
 const StyledTaskList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-top: 10px;
+  gap: 0;
+  margin-top: 7px;
 `;
