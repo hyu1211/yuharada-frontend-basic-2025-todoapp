@@ -54,7 +54,7 @@ export const TodoCard = () => {
 const StyledWrapper = styled.div`
   background-color: ${COLOR.LIGHT_BLACK};
   border-radius: 4px;
-  padding: 15px 15px;
+  padding: 15px 15px 10px;
   margin: 0;
   width: auto;
 `;
