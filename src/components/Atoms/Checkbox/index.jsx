@@ -32,6 +32,7 @@ const CheckboxButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1px;
 
   &:hover ${CheckboxImage} {
     opacity: 1;

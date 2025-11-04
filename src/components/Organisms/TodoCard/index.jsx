@@ -54,7 +54,7 @@ export const TodoCard = () => {
 const StyledWrapper = styled.div`
   background-color: ${COLOR.LIGHT_BLACK};
   border-radius: 4px;
-  padding: 15px 15px 10px;
+  padding: 15px 15px 15px;
   margin: 0;
   width: auto;
 `;
@@ -72,5 +72,5 @@ const StyledTaskList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-top: 7px;
+  margin-top: 1px;
 `;

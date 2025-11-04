@@ -35,6 +35,8 @@ const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  margin-left: 1px;
+  margin-top: 1px;
 
   transition: background-color 0.1s ease;
 
