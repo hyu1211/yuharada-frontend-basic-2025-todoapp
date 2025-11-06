@@ -29,12 +29,14 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 2px 6px;
+  padding: 6px 6px 6px;
   border-radius: 9999px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  margin-left: 1px;
+  margin-top: 1px;
 
   transition: background-color 0.1s ease;
 

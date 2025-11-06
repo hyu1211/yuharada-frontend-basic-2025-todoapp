@@ -46,7 +46,7 @@ export const Task = ({
 const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 7px 10px;
   width: 100%;
   gap: 10px;
 `;
@@ -54,8 +54,8 @@ const StyledWrapper = styled.div`
 const StyledNameAndButtonWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
   flex: 1;
+  min-width: 0;
   height: 20px;
 `;
 
@@ -64,11 +64,17 @@ const StyledTaskName = styled.div`
   ${TEXT.S};
   padding: 0 4px;
   flex: 1;
+  min-width: 0;
   height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: -4px;
 `;
 
 const StyledEditButtonWrapper = styled.div`
   margin-left: auto;
+  margin-right: 21px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
