@@ -64,7 +64,7 @@ const StyledAddButtonRow = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 4px;
   box-sizing: border-box;
 `;
 
@@ -72,5 +72,5 @@ const StyledTaskList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
-  margin-top: 1px;
+  margin: 1px 0 0 0;
 `;
