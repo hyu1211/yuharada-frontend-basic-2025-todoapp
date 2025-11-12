@@ -62,14 +62,14 @@ const StyledNameAndButtonWrapper = styled.div`
 const StyledTaskName = styled.div`
   color: ${COLOR.LIGHT_GRAY};
   ${TEXT.S};
-  padding: 0 4px;
+  padding: 0;
   flex: 1;
   min-width: 0;
   height: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-left: -4px;
+  margin: 0 8px 0 0;
 `;
 
 const StyledEditButtonWrapper = styled.div`

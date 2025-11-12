@@ -23,6 +23,8 @@ const AddTaskText = styled.span`
   ${TEXT.S}
   color: ${COLOR.GREEN};
   display: block;
+  position: relative;
+  top: 1px;
 `;
 
 const Button = styled.button`
